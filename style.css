@@ -1,0 +1,526 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #E75E8D;
+    color: white;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Start Header-Section */
+.navbar {
+    z-index: 9999999999;
+}
+
+.navbar form input {
+    width: 230px;
+    background-color: #27292A;
+    color: #6C757D;
+    outline: none;
+    border: none;
+    padding: 12px;
+    position: relative;
+}
+
+.navbar form .btn {
+    position: absolute;
+    z-index: 99999;
+    color: #6C757D;
+}
+
+.navbar form input:focus {
+    box-shadow: none;
+    background-color: #27292A;
+    outline: none;
+}
+
+.navbar .profile .btn {
+    background-color: #27292A;
+    color: #6C757D;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar .profile .btn:hover {
+    background-color: #E75E8D;
+    color: white;
+}
+
+.navbar .profile .btn:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #6C757D;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus {
+    color: #E75E8D;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #E75E8D;
+}
+
+.burger-icon {
+    position: relative;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.burger-icon span {
+    position: absolute;
+    background-color: #E75E8D;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.burger-icon span:first-child {
+    top: 0;
+}
+
+.burger-icon span:nth-child(2) {
+    top: 6px;
+}
+
+.burger-icon span:last-child {
+    top: 12px;
+}
+
+.burger-icon.active span:first-child {
+    transform: rotate(45deg);
+    top: 6px;
+}
+
+.burger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active span:last-child {
+    transform: rotate(-45deg);
+    top: 6px;
+}
+
+.navbar .collapsee.active {
+    display: none;
+}
+
+
+.navbar .navbar-nav.active {
+    text-align: center;
+    background-color: white;
+    transition: .5s;
+}
+
+.navbar .navbar-nav.active .nav-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    transition: .5s;
+}
+
+@media (max-width:767px) {
+
+    .navbar form input {
+        display: none;
+    }
+}
+
+@media (max-width:991px) {
+
+    .navbar form input {
+        display: none;
+    }
+}
+
+/* End Header-Section */
+
+/* Start Landing-Section */
+.landing {
+    position: relative;
+    background-color: #27292A;
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .row:first-of-type {
+    background-image: url("image/banner-bg.jpg");
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .title {
+    color: white;
+}
+
+.landing .container .landing-content .title p span {
+    color: #E75E8D;
+}
+
+.landing .container .landing-content .title .btn {
+    background-color: #E75E8D;
+    border: none;
+    outline: none;
+    width: 140px;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.landing .container .landing-content .title .btn:focus {
+    box-shadow: none;
+}
+
+.landing .container .landing-content .title .btn:hover {
+    background-color: white;
+    color: #E75E8D;
+}
+
+.landing .container .landing-content .mostpopular {
+    background-color: #1F2122;
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .mostpopular .title span {
+    color: white;
+}
+
+.landing .container .landing-content .mostpopular .title h3 {
+    color: #E75E8D;
+}
+
+.landing .container .landing-content .mostpopular .game {
+    background-color: #27292A;
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .mostpopular .game img {
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .mostpopular .game .title-2 span:first-child {
+    color: #6C757D;
+}
+
+.landing .container .landing-content .mostpopular .game .title-2 span:last-child {
+    color: white;
+}
+
+.landing .container .landing-content .mostpopular .game img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing .container .landing-content .mostpopular .btn {
+    background-color: #E75E8D;
+    color: white;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.landing .container .landing-content .mostpopular .btn:hover {
+    background-color: white;
+    color: #E75E8D;
+}
+
+
+.landing .container .landing-content .gaming-library {
+    background-color: #1F2122;
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .gaming-library .title h3 {
+    color: #E75E8D;
+}
+
+.landing .container .landing-content .gaming-library .title span {
+    color: white;
+}
+
+.landing .container .landing-content .gaming-library .button .btn {
+    background-color: transparent;
+    border: 1px solid #6C757D;
+    cursor: default;
+}
+
+.landing .container .landing-content .gaming-library .button .btn:focus {
+    box-shadow: none;
+}
+
+.landing .container .landing-content .gaming-library .game-name p:first-child,
+.landing .container .landing-content .gaming-library .game-date p:first-child,
+.landing .container .landing-content .gaming-library .game-hours p:first-child,
+.landing .container .landing-content .gaming-library .game-currently p:first-child {
+    color: white;
+}
+
+.landing .container .landing-content .gaming-library img {
+    border-radius: 20px;
+}
+
+.landing .container .landing-content .gaming-library #btn {
+    border-color: #E75E8D;
+    color: #E75E8D;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.landing .container .landing-content .gaming-library #btn:hover {
+    background-color: #E75E8D;
+    color: white;
+}
+
+.landing .container .landing-content .gaming-library .btn {
+    background-color: #E75E8D;
+    color: white;
+    border: none;
+    transition: .5s;
+}
+
+.landing .container .landing-content .gaming-library .btn:hover {
+    color: #E75E8D;
+    background-color: white;
+}
+
+.landing .container .landing-content .gaming-library .download-box {
+    flex-wrap: wrap;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #6C757D;
+}
+
+@media (max-width: 767px) {
+    .landing .container .landing-content .row .title {
+        text-align: center;
+    }
+}
+
+/* End Landing-Section */
+
+/* Start Featured-Section */
+.featured .container .featured-content .row .title h3 {
+    color: #E75E8D;
+}
+
+.featured .container .featured-content .row .title span {
+    color: white;
+}
+
+.featured .container .featured-content .row .container {
+    width: 100%;
+    height: 100vh;
+    background: #222;
+}
+
+/* End Featured-Section */
+
+/* Start Deatails-Seciton */
+.details .container .row {
+    background-color: #27292A;
+}
+
+.details .container .row .col img {
+    border-radius: 20px;
+}
+
+.details .container .row .col .s-col img {
+    width: 100%;
+}
+
+.details .container .row .col .s-col {
+    position: relative;
+}
+
+.details .container .row .col .s-col button {
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.details .container .row .col .s-col button:focus {
+    box-shadow: none;
+}
+
+.details .container .row {
+    border-radius: 20px;
+}
+
+.details .container .row .col .details-content .game-title h2 {
+    color: white;
+}
+
+.details .game-details .container .game-details .row {
+    background-color: red;
+}
+
+.details .container .row .col .details-content .game-details .row .f-line span,
+.details .container .row .col .details-content .game-details .row .s-line span,
+.details .container .row .col .details-content .game-details .row .first-line p,
+.details .container .row .col .details-content .game-details .row .second-line p,
+.details .container .row .col .details-content .game-details .row .third-line p,
+.details .container .row .col .details-content .game-details .row .fourth-line p {
+    color: white;
+}
+
+.details .container .row .col .details-content .game-details {
+    background-color: #1F2122;
+    border-radius: 20px;
+}
+
+.details .container .row .col .details-content .game-details .game-image .row {
+    background-color: #1F2122;
+}
+
+.details .container .row .col .details-content .game-details .game-image .game-description p {
+    font-size: 18px;
+}
+
+.details .container .row .col .details-content .game-details .game-image .game-description p a {
+    color: white;
+}
+
+.details .container .row .col .details-content .game-details .game-image .game-description p a:hover {
+    color: #FF9999;
+}
+
+.details .container .row .col .details-content .game-details .game-image .button button {
+    background-color: transparent;
+    border-color: #E75E8D;
+    color: #E75E8D;
+    transition: .3s;
+    width: 100%;
+}
+
+.details .container .row .col .details-content .game-details .game-image .button button:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.details .container .row .col .details-content .game-details .game-image .button button:focus {
+    box-shadow: none;
+}
+
+.details .container .row .col .details-content .second-details {
+    border-radius: 20px;
+}
+
+.details .container .row .col .details-content .second-details,
+.details .container .row .col .details-content .second-details .other-games .row {
+    background-color: #1F2122;
+}
+
+
+/* End Deatails-Seciton */
+
+/* Start Profile-Section */
+.profile-section .container .row {
+    background-color: #27292A;
+    border-radius: 20px;
+}
+
+.profile-section .container .row .col .profile-content .row {
+    background-color: #1F2122;
+    border-radius: 20px;
+}
+
+.profile-section .container .row .col .profile-content img {
+    border-radius: 20px;
+}
+
+.profile-section .container .row .col .profile-content .row .para1 {
+    background-color: #E75E8D;
+    width: fit-content;
+}
+
+.profile-section .container .row .col .profile-content .row #button {
+    background-color: transparent;
+    border-color: #E75E8D;
+    color: #E75E8D;
+    transition: .3s;
+}
+
+.profile-section .container .row .col .profile-content .row #button:focus {
+    box-shadow: none;
+}
+
+.profile-section .container .row .col .profile-content .row #button:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.profile-section .container .row .col .profile-content .row .col {
+    background-color: #27292A;
+    border-radius: 20px;
+}
+
+.profile-section .container .row .col .profile-content .row .col .line:not(:last-child) {
+    position: relative;
+}
+
+.profile-section .container .row .col .profile-content .row .col .line:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    margin-top: 12px;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row .clip-box {
+    background-color: #27292A;
+    border-radius: 20px;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row .clip-box .image {
+    position: relative;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row .clip-box #button2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row .clip-box #button2:focus {
+    box-shadow: none;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row #button3 {
+    background-color: #E75E8D;
+    border: none;
+    transition: .3s;
+    width: 170px;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row #button3:focus {
+    box-shadow: none;
+}
+
+.profile-section .container .row .col .profile-content .row .videos .row #button3:hover {
+    background-color: white;
+    color: #E75E8D;
+}
+
+/* End Profile-Section */
